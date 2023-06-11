@@ -9,7 +9,7 @@ function setup() {
   clock = {
     x: 15,
     y: 17,
-    size:444,
+    size: 444,
 
     Draw() {
       image(SalyClock, this.x, this.y, this.size, this.size);
@@ -28,7 +28,7 @@ function draw() {
   clock.Draw();
 }
 
-function mouseClicked() {
+function touchEnded() {
   let firstCornerX = clock.x;
   let firstCornerY = clock.y;
   let secondCornerX = clock.x + clock.size;
